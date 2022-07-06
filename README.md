@@ -1,6 +1,6 @@
 # odp2jpg
 
-[LibreOffice の Impress](https://www.libreoffice.org/discover/impress/)で作成したスライド資料を分割してJPEGファイルに変換します。
+[LibreOffice の Impress](https://www.libreoffice.org/discover/impress/)の各スライドを1枚づつJPEGファイルに変換します。
 
 ## 使い方
 
@@ -9,6 +9,9 @@
 ~~~
 
 ### 例
+
+以下を実行すると、`~/wk/test.pdf`が作成され、
+最後にスライド枚数分の`~/wk/slides/slide%d.jpg`が作成されます。
 
 ~~~shell
 ~/bin/odp2jpg.sh ~/wk/test.odp ~/wk/slides
