@@ -33,4 +33,3 @@ chmod u+x ~/bin/odp2jpg.sh
 ## References
 
 - [Convert Impress ODP Presentation to several JPG images from command line](https://stackoverflow.com/questions/33096772/convert-impress-odp-presentation-to-several-jpg-images-from-command-line)
--
