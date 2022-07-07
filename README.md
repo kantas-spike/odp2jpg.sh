@@ -1,25 +1,28 @@
-# odp2jpg
+# odp2jpg.sh
 
-[LibreOffice の Impress](https://www.libreoffice.org/discover/impress/)の各スライドを1枚づつJPEGファイルに変換します。
+Convert each slide in [LibreOffice's Impress](https://www.libreoffice.org/discover/impress/) into a JPEG file.
 
-## 使い方
+## Usage
 
 ~~~shell
 ~/bin/odp2jpg.sh ODP_FILE_PATH OUTPUT_DIR_PATH
 ~~~
 
-### 例
+### Example
 
-以下を実行すると、`~/wk/test.pdf`が作成され、
-最後にスライド枚数分の`~/wk/slides/slide%d.jpg`が作成されます。
+Run the following shell.
+First, `~/wk/test.pdf` will be created.
+Finally, `~/wk/slides/slide%d.jpg` will be created for the number of slides.
 
 ~~~shell
 ~/bin/odp2jpg.sh ~/wk/test.odp ~/wk/slides
 ~~~
 
-## インストール方法
+## How to install
 
-インストールには以下を実行します。
+Copy `odb2jpg.sh` to ~bin by make command.
+
+Run the following shell.
 
 ~~~shell
 $ make install
@@ -27,8 +30,7 @@ cp odp2jpg.sh ~/bin
 chmod u+x ~/bin/odp2jpg.sh
 ~~~
 
-`~/bin`に`odp2jpg.sh`をコピーして使用します。
-
-## 参考
+## References
 
 - [Convert Impress ODP Presentation to several JPG images from command line](https://stackoverflow.com/questions/33096772/convert-impress-odp-presentation-to-several-jpg-images-from-command-line)
+-
