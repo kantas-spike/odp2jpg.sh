@@ -32,4 +32,4 @@ PDF_PATH="${PDF_OUTPUT_DIR}/${ODP_NAME}.pdf"
 echo "convert to pdf: ${PDF_PATH} ..."  1>&2
 soffice --headless --convert-to pdf "${1}" --outdir ${PDF_OUTPUT_DIR}
 echo "convert to jpg: ${2}/slide%d.jpg ..."  1>&2
-convert -density 400 "${PDF_PATH}" -resize 1280x720 "${2}/slide%d.jpg"
+magick -density 400 "${PDF_PATH}" -resize 1280x720 "${2}/slide%d.jpg"
