@@ -18,6 +18,12 @@ Finally, `~/wk/slides/slide%d.jpg` will be created for the number of slides.
 ~/bin/odp2jpg.sh ~/wk/test.odp ~/wk/slides
 ~~~
 
+### Notes
+
+`odp2jpg.sh` uses `soffice`, which comes with Libreoffice, and `magick` from [ImageMagick](https://imagemagick.org/script/index.php).
+
+Please install these tools beforehand.
+
 ## How to install
 
 Copy `odb2jpg.sh` to ~bin by make command.

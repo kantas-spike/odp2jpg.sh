@@ -17,6 +17,12 @@
 ~/bin/odp2jpg.sh ~/wk/test.odp ~/wk/slides
 ~~~
 
+### 注意事項
+
+`odp2jpg.sh` は、Libreofficeに付属する`soffice`と、[ImageMagick](https://imagemagick.org/script/index.php)の`magick`を使用しています。
+
+これらのツールを事前にインストールしてください。
+
 ## インストール方法
 
 `make`コマンドにより、`~/bin`に`odp2jpg.sh`をコピーして使用します。
